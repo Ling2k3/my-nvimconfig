@@ -9,9 +9,13 @@ Plug('b0o/incline.nvim')
 Plug("SmiteshP/nvim-navic")
 Plug('nvim-lualine/lualine.nvim')
 
-Plug('ms-jpq/coq_nvim', {['branch'] = 'coq'})
-Plug('ms-jpq/coq.artifacts', {['branch'] = 'artifacts'})
-Plug('ms-jpq/coq.thirdparty', {['branch'] = '3p'})
+Plug('hrsh7th/cmp-nvim-lsp')
+Plug('hrsh7th/cmp-buffer')
+Plug('hrsh7th/cmp-path')
+Plug('hrsh7th/cmp-cmdline')
+Plug('hrsh7th/nvim-cmp')
+Plug('L3MON4D3/LuaSnip')
+Plug('saadparwaiz1/cmp_luasnip')
 
 Plug("nvim-neo-tree/neo-tree.nvim")
 
@@ -44,6 +48,8 @@ Plug('smjonas/inc-rename.nvim')
 Plug('akinsho/toggleterm.nvim', {['tag'] = '*'})
 
 Plug('zbirenbaum/copilot.lua')
+Plug("zbirenbaum/copilot-cmp")
+
 Plug('MeanderingProgrammer/render-markdown.nvim')
 Plug('lewis6991/gitsigns.nvim')
 

@@ -4,4 +4,3 @@ require('options')
 require('languages')
 require('interfaces')
 require('bot')
-

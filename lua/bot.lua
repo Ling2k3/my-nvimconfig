@@ -20,7 +20,7 @@ require('copilot').setup({
     hide_during_completion = true,
     debounce = 75,
     keymap = {
-      accept = "<M-l>",
+      accept = "<Tab>",
       accept_word = false,
       accept_line = false,
       next = "<M-]>",
@@ -41,4 +41,8 @@ require('copilot').setup({
   },
   copilot_node_command = 'node', -- Node.js version must be > 18.x
   server_opts_overrides = {},
+})
+require('copilot_cmp').setup({
+  event = { "InsertEnter", "LspAttach" },
+  fix_pairs = true,
 })
