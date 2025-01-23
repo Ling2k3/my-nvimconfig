@@ -3,12 +3,11 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
-local colorscheme = "gruvbox"
+local colorscheme = "everforest"
 vim.cmd("colorscheme " .. colorscheme)
 
 require("conf_1/neo_tree")
 require("conf_1/lua_line")
-require("conf_1/incline")
 require("conf_1/toggleterm")
 
 require("nvim-autopairs").setup({})
@@ -105,3 +104,10 @@ require('trouble').setup({
       },
    },
 })
+require("indentmini").setup{}
+require("lspsaga").setup({
+   lightbulb = {
+      enable = false,
+   },
+})
+require("colorizer").setup{}

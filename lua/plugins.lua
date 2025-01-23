@@ -1,12 +1,8 @@
 local vim = vim
 local Plug = vim.fn["plug#"]
 vim.call("plug#begin")
+Plug("neanias/everforest-nvim")
 
-Plug('RRethy/base16-nvim')
-Plug("ellisonleao/gruvbox.nvim")
-
-Plug('b0o/incline.nvim')
-Plug("SmiteshP/nvim-navic")
 Plug('nvim-lualine/lualine.nvim')
 
 Plug('L3MON4D3/LuaSnip')
@@ -46,10 +42,13 @@ Plug('smjonas/inc-rename.nvim')
 Plug('akinsho/toggleterm.nvim', {['tag'] = '*'})
 
 Plug('zbirenbaum/copilot.lua')
+Plug('CopilotC-Nvim/CopilotChat.nvim')
 
 Plug('MeanderingProgrammer/render-markdown.nvim')
 Plug('lewis6991/gitsigns.nvim')
 
-Plug('lukas-reineke/indent-blankline.nvim')
-
+Plug('nvimdev/indentmini.nvim')
+Plug("nvimdev/lspsaga.nvim")
+Plug("lukas-reineke/indent-blankline.nvim")
+Plug("norcalli/nvim-colorizer.lua")
 vim.call("plug#end")

@@ -1,5 +1,4 @@
-local navic = require("nvim-navic")
-require("nvim-treesitter.configs").setup({
+local vim = vim require("nvim-treesitter.configs").setup({
    ensure_installed = { "lua", "vim", "go", "vimdoc", "query", "zig", "json", "editorconfig", "sql" },
    sync_install = false,
    auto_install = true,
@@ -19,9 +18,6 @@ local coq = require("coq")
 local lsp = require('lspconfig')
 local util = require("lspconfig.util")
 local on_attach = function(client, bufnr)
-   if client.server_capabilities.documentSymbolProvider then
-      navic.attach(client, bufnr)
-   end
 end
 require("mason-lspconfig").setup_handlers {
    function(server_name)
