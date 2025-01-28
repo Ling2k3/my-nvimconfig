@@ -89,7 +89,7 @@ require('render-markdown.integ.coq').setup()
 require("ibl").setup {
    debounce = 100,
    indent = { char = "|" },
-   whitespace = { highlight = { "Whitespace", "NonText" } }
+   scope  = {enabled = false}
 }
 require('trouble').setup({
    modes = {

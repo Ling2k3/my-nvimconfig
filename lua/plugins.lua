@@ -32,7 +32,6 @@ Plug('xiyaowong/transparent.nvim')
 Plug('dgagn/diagflow.nvim')
 Plug('numToStr/Comment.nvim')
 
-
 Plug("windwp/nvim-autopairs")
 Plug("windwp/nvim-ts-autotag")
 Plug("tpope/vim-surround")
@@ -40,9 +39,6 @@ Plug("mattn/emmet-vim")
 
 Plug('smjonas/inc-rename.nvim')
 Plug('akinsho/toggleterm.nvim', {['tag'] = '*'})
-
-Plug('zbirenbaum/copilot.lua')
-Plug('CopilotC-Nvim/CopilotChat.nvim')
 
 Plug('MeanderingProgrammer/render-markdown.nvim')
 Plug('lewis6991/gitsigns.nvim')
